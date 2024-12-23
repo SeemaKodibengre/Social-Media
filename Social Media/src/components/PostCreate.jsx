@@ -115,7 +115,7 @@ const navigate=useNavigate();
       formData.append("userId", userId);
       formData.append("type", "image");
       formData.append("description", description);
-      const response = await axios.post(`http://localhost:3000/post/create`, formData, {
+      const response = await axios.post(`https://social-media-backend-pp0s.onrender.com/post/create`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",
