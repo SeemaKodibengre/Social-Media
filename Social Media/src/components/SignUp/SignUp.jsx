@@ -9,7 +9,7 @@ function Signup() {
   const navigate = useNavigate();
 
   const googleAuth = () => {
-    window.open("https://social-media-backend-pp0s.onrender.com", "_self");
+    window.open("https://social-media-backend-pp0s.onrender.com/auth/google", "_self");
   };
 
   const [data, setData] = useState({
@@ -26,7 +26,7 @@ function Signup() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        'https://social-media-backend-pp0s.onrender.com',
+        'https://social-media-backend-pp0s.onrender.com/auth/register',
         {
           name: data.name,
           email: data.email,
