@@ -1,7 +1,6 @@
 
 import { Link, useNavigate } from "react-router-dom";
 import styles from './styles.module.css';
-import image6 from '../../../images/image6.JPG';
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -87,7 +86,7 @@ useEffect(() => {
         <h1 className={styles.heading}>Sign up Form</h1>
         <div className={styles.form_container}>
           <div className={styles.left}>
-            <img className={styles.img} src={image6} alt="signup" />
+            <img className={styles.img} src="/images/image6.jpg" alt="signup" />
           </div>
           <div className={styles.right}>
             <h2 className={styles.from_heading}>Create Account</h2>

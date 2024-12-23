@@ -1,6 +1,5 @@
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import styles from "./style.module.css";
-import image from '../../../images/image4.jpg'
 import { useState } from "react";
 import axios from "axios";
 
@@ -47,7 +46,7 @@ let user={token:token,id:id}
 			<h1 className={styles.heading}>Log in Form</h1>
 			<div className={styles.form_container}>
 				<div className={styles.left}>
-					<img className={styles.img} src={image} alt="login" />
+					<img className={styles.img} src="/images/image4.jpg" alt="login" />
 				</div>
 				<div className={styles.right}>
 					<h2 className={styles.from_heading}>Log in</h2>
