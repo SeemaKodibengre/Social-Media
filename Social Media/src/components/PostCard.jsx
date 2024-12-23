@@ -27,7 +27,7 @@ const PostCard = () => {
       }
 
       const response = await axios.get(
-        `http://localhost:3000/post/viewAll`,
+        `https://social-media-backend-pp0s.onrender.com`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
