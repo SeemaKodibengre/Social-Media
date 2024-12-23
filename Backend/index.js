@@ -13,7 +13,11 @@ require('./passport');
 const authRoutes = require("./routes/userRoute");
 const postRoutes=require('./routes/postRoute')
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://social-media-g83m.onrender.com',  // Your frontend's URL
+  methods: ['GET', 'POST'],
+  credentials: true  // If you're using cookies for session management
+}));
 // Middleware
 app.use(express.json());
 app.use(session({ secret: "secret", resave: false, saveUninitialized: true }));
