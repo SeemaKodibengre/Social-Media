@@ -25,7 +25,7 @@ const navigate=useNavigate();
         }
 
         const response = await axios.get(
-          `https://social-media-backend-pp0s.onrender.com`,
+          `https://social-media-backend-pp0s.onrender.com/auth/user`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
