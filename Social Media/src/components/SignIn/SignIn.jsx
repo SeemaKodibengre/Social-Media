@@ -23,7 +23,7 @@ setItem({...item,[e.target.name]:e.target.value})
 	
         try {
           const response = await axios.post(
-           'https://social-media-backend-pp0s.onrender.com',
+           'https://social-media-backend-pp0s.onrender.com/auth/login',
             {
              
               email: item.email,
