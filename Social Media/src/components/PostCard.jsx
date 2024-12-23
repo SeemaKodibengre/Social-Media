@@ -27,7 +27,7 @@ const PostCard = () => {
       }
 
       const response = await axios.get(
-        `http://localhost:3000/post/viewAll`,
+        `https://social-media-backend-pp0s.onrender.com/post/viewAll`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -68,7 +68,7 @@ const PostCard = () => {
     }
 
     axios
-      .post(`http://localhost:3000/post/like/${postId}`, { userId })
+      .post(`https://social-media-backend-pp0s.onrender.com/post/like/${postId}`, { userId })
       .then((response) => {
        
         setPosts((prevPosts) =>
@@ -123,7 +123,7 @@ const PostCard = () => {
     }
   console.log(postId)
     axios
-      .post(`http://localhost:3000/post/unlike/${postId}`, { userId })
+      .post(`https://social-media-backend-pp0s.onrender.com/post/unlike/${postId}`, { userId })
       .then((response) => {
         setPosts((prevPosts) =>
           prevPosts.map((post) =>

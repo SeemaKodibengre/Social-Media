@@ -29,7 +29,7 @@ const ProfileEdit = ({ isOpen, onClose }) => {
           return;
         }
 
-        const response = await axios.get(`http://localhost:3000/auth/user`, {
+        const response = await axios.get(`https://social-media-backend-pp0s.onrender.com/auth/user`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -83,7 +83,7 @@ const ProfileEdit = ({ isOpen, onClose }) => {
 
 
       await axios.put(
-        `http://localhost:3000/auth/update/${userId}`,
+        `https://social-media-backend-pp0s.onrender.com/auth/update/${userId}`,
         formData,
         {
           headers: {
