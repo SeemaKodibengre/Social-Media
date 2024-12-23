@@ -61,7 +61,7 @@ const Registration=async(req,res)=>{
         if (loginErr) return next(loginErr);
   const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET)
   
-        return res.redirect(`http://localhost:5173/register?token=${token}&userId=${user._id}`);
+        return res.redirect(`https://social-media-g83m.onrender.com/register?token=${token}&userId=${user._id}`);
         
       });
     })(req, res, next);
