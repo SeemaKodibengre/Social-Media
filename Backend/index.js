@@ -14,9 +14,7 @@ const authRoutes = require("./routes/userRoute");
 const postRoutes=require('./routes/postRoute')
 const app = express();
 app.use(cors({
-  origin: 'https://social-media-g83m.onrender.com',  // Your frontend's URL
-  methods: ['GET', 'POST'],
-  credentials: true  // If you're using cookies for session management
+  origin: 'https://social-media-g83m.onrender.com'
 }));
 // Middleware
 app.use(express.json());
