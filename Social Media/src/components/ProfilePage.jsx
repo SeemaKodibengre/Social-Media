@@ -35,7 +35,7 @@ const ProfilePage = () => {
       }
 
       const response = await axios.get(
-        `http://localhost:3000/auth/user`,
+        `https://social-media-backend-pp0s.onrender.com/auth/user`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -61,7 +61,7 @@ const ProfilePage = () => {
       }
 
       const response = await axios.get(
-        `http://localhost:3000/post/view?userId=${userId}`,
+        `https://social-media-backend-pp0s.onrender.com/post/view?userId=${userId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
